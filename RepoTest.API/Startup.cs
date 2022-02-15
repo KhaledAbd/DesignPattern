@@ -6,11 +6,14 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using RepoTest.API.Data;
+using RepoTest.API.Helpers;
 
 namespace RepoTest.API
 {
@@ -26,8 +29,12 @@ namespace RepoTest.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddDbContext<DataContext>(x =>
+            {
+                x.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));
+            });
             services.AddControllers();
+            services.AddAutoMapper(typeof(AutoMapperProfile), typeof(Startup));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "RepoTest.API", Version = "v1" });

@@ -13,5 +13,11 @@ namespace RepoTest.API.Data
         }
         
         public virtual DbSet<Product> Products{get; set;}
+
+        public virtual DbSet<Item> Items {get; set;}
+
+        public virtual DbSet<BillItem> BillItems {get; set;}
+
+        public virtual DbSet<Bill> Bills {get; set;}
     }
 }

@@ -35,6 +35,12 @@ namespace RepoTest.API
             });
             services.AddControllers();
             services.AddAutoMapper(typeof(AutoMapperProfile), typeof(Startup));
+            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IBillRepository, BillRepository>();
+            services.AddCors((o => o.AddPolicy("CorsPolicy",
+             builder =>  builder.AllowAnyOrigin()
+                                .AllowAnyHeader()
+                                .AllowAnyMethod())));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "RepoTest.API", Version = "v1" });
@@ -52,11 +58,9 @@ namespace RepoTest.API
             }
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
             app.UseAuthorization();
-
+            app.UseCors("CorsPolicy");  
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

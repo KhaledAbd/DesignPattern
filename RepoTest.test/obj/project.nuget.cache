@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vBIcq8HogWbdZ0mNX1ExBllEnjs0+KMe+4XBZrVEOPb/dqvpwGpCIIqN/Uu2yacrSNJZVY8S1+xsSARZdxmOcg==",
+  "dgSpecHash": "Yvc7//LEHEEylQzwf+zHnIxBT+SrZTKHitTREAenSga+TiIWCaB5U3MqbjcxRU0dv/EeWCL4l/b+SSSOY628UA==",
   "success": true,
   "projectFilePath": "/home/ahmed/Downloads/container/RepoTest.test/RepoTest.test.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "/home/ahmed/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/8.1.1/automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "/home/ahmed/.nuget/packages/castle.core/4.4.0/castle.core.4.4.0.nupkg.sha512",
     "/home/ahmed/.nuget/packages/coverlet.collector/3.0.2/coverlet.collector.3.0.2.nupkg.sha512",
+    "/home/ahmed/.nuget/packages/fluentassertions/5.2.0/fluentassertions.5.2.0.nupkg.sha512",
     "/home/ahmed/.nuget/packages/microsoft.codecoverage/16.9.4/microsoft.codecoverage.16.9.4.nupkg.sha512",
     "/home/ahmed/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/ahmed/.nuget/packages/microsoft.data.sqlite.core/5.0.2/microsoft.data.sqlite.core.5.0.2.nupkg.sha512",
@@ -80,6 +81,7 @@
     "/home/ahmed/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "/home/ahmed/.nuget/packages/system.componentmodel.primitives/4.3.0/system.componentmodel.primitives.4.3.0.nupkg.sha512",
     "/home/ahmed/.nuget/packages/system.componentmodel.typeconverter/4.3.0/system.componentmodel.typeconverter.4.3.0.nupkg.sha512",
+    "/home/ahmed/.nuget/packages/system.configuration.configurationmanager/4.4.0/system.configuration.configurationmanager.4.4.0.nupkg.sha512",
     "/home/ahmed/.nuget/packages/system.console/4.3.0/system.console.4.3.0.nupkg.sha512",
     "/home/ahmed/.nuget/packages/system.diagnostics.debug/4.3.0/system.diagnostics.debug.4.3.0.nupkg.sha512",
     "/home/ahmed/.nuget/packages/system.diagnostics.diagnosticsource/5.0.1/system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
@@ -124,6 +126,7 @@
     "/home/ahmed/.nuget/packages/system.security.cryptography.encoding/4.3.0/system.security.cryptography.encoding.4.3.0.nupkg.sha512",
     "/home/ahmed/.nuget/packages/system.security.cryptography.openssl/4.3.0/system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/home/ahmed/.nuget/packages/system.security.cryptography.primitives/4.3.0/system.security.cryptography.primitives.4.3.0.nupkg.sha512",
+    "/home/ahmed/.nuget/packages/system.security.cryptography.protecteddata/4.4.0/system.security.cryptography.protecteddata.4.4.0.nupkg.sha512",
     "/home/ahmed/.nuget/packages/system.security.cryptography.x509certificates/4.3.0/system.security.cryptography.x509certificates.4.3.0.nupkg.sha512",
     "/home/ahmed/.nuget/packages/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg.sha512",
     "/home/ahmed/.nuget/packages/system.text.encoding.extensions/4.3.0/system.text.encoding.extensions.4.3.0.nupkg.sha512",
